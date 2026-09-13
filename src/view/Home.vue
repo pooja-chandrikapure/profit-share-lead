@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-[#070a10] text-slate-100 relative overflow-hidden flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8">
+  <div class="landing-page min-h-screen bg-[#070a10] text-slate-100 relative overflow-hidden flex flex-col items-center justify-center p-2 sm:p-2 lg:p-2">
     
     <!-- Ambient Dynamic Lighting & Radar Background -->
     <div class="pointer-events-none absolute inset-0 overflow-hidden">
@@ -31,23 +31,23 @@
     </div> -->
 
     <!-- Main Glassmorphic Card Container -->
-    <main class="relative z-10 w-full max-w-lg rounded-3xl bg-[#0d1322]/85 border border-slate-700/50 p-6 sm:p-8 backdrop-blur-xl shadow-2xl shadow-black/80 transition-all">
+    <main class="landing-card relative z-10 w-full max-w-lg rounded-3xl bg-[#0d1322]/85 border border-slate-700/50 p-6 sm:p-8 backdrop-blur-xl shadow-2xl shadow-black/80 transition-all">
       
       <!-- Top Decorative Accent Bar -->
       <div class="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-[2px] bg-gradient-to-r from-transparent via-emerald-400 to-transparent"></div>
 
       <!-- Avatar & Brand Hero Section -->
-      <header class="flex flex-col items-center text-center">
+      <header class="brand-header flex flex-col items-center text-center">
         
         <!-- Profile Circle with Concentric Radar Wave Effect -->
-        <div class="relative mb-5 group cursor-pointer" @click="redirectToTg" title="Click to join Telegram">
+        <div class="profile-link relative mb-2 group cursor-pointer" @click="redirectToTg" title="Click to join Telegram">
           <!-- Animated Outer Ripple Ring -->
           <div class="absolute -inset-2 rounded-full border border-emerald-500/30 animate-ping opacity-25"></div>
           <!-- Glowing Radial Backdrop -->
           <div class="absolute -inset-1.5 rounded-full bg-gradient-to-tr from-emerald-500 via-cyan-500 to-blue-600 opacity-70 blur-sm group-hover:opacity-100 transition duration-500"></div>
           
           <!-- Profile Logo Container -->
-          <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full bg-black border-2 border-slate-700/80 overflow-hidden flex items-center justify-center shadow-xl group-hover:scale-[1.02] transition-transform duration-300">
+          <div class="brand-logo relative w-25 h-25 sm:w-30 sm:h-30 rounded-full bg-black border-2 border-slate-700/80 overflow-hidden flex items-center justify-center shadow-xl group-hover:scale-[1.02] transition-transform duration-300">
             <img 
               src="/profit-logo.jpeg" 
               alt="Profit Radar Logo" 
@@ -71,16 +71,16 @@
           </span>
         </div> -->
 
-        <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white mb-2 font-heading">
+        <h1 class="brand-title text-2xl sm:text-4xl font-extrabold tracking-tight text-white mb-1 font-heading">
           PROFIT <span class="bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400 bg-clip-text text-transparent">RADAR</span>
         </h1>
 
-        <p class="text-slate-400 text-sm sm:text-base font-medium tracking-wide max-w-xs sm:max-w-sm mb-4">
+        <p class="brand-subtitle text-slate-400 text-sm sm:text-base font-medium tracking-wide max-w-xs sm:max-w-sm mb-0">
           Market Analysis. Simplified.
         </p>
 
         <!-- Social Proof Stats Banner -->
-        <div class="w-full gap-2 py-3 px-4 rounded-2xl bg-slate-900/60 mb-5">
+        <div class="social-proof w-full gap-2 py-3 px-4 rounded-2xl">
           <div class="flex flex-col items-center">
             <div class="flex items-center gap-1.5">
               <span class="text-xl sm:text-2xl font-extrabold text-white font-heading">5,025+</span>
@@ -115,10 +115,10 @@
       </div> -->
 
       <!-- Key Features Section (4 Elevated Glass Cards) -->
-      <section class="space-y-2.5 mb-6" aria-label="Key Benefits">
+      <section class="benefit-list space-y-2.5 mb-6" aria-label="Key Benefits">
         
         <!-- Feature 1: All Segments -->
-        <div class="glass-card glass-card-hover rounded-xl p-3.5 flex items-start gap-3.5 text-left">
+        <div class="flex benefit-card glass-card glass-card-hover rounded-xl p-3.5 flex gap-3.5 items-center text-center">
           <!-- <div class="w-9 h-9 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center shrink-0 text-emerald-400 mt-0.5">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/>
@@ -131,7 +131,7 @@
         </div>
 
         <!-- Feature 2: Trend Based Analysis -->
-        <div class="glass-card glass-card-hover rounded-xl p-3.5 flex items-start gap-3.5 text-left">
+        <div class="flex benefit-card glass-card glass-card-hover rounded-xl p-3.5 flex items-center gap-3.5 text-center">
           <!-- <div class="w-9 h-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center shrink-0 text-cyan-400 mt-0.5">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
@@ -144,7 +144,7 @@
         </div>
 
         <!-- Feature 3: Trading Concepts -->
-        <div class="glass-card glass-card-hover rounded-xl p-3.5 flex items-start gap-3.5 text-left">
+        <div class="flex benefit-card glass-card glass-card-hover rounded-xl p-3.5 flex items-center gap-3.5 text-center">
           <!-- <div class="w-9 h-9 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center shrink-0 text-amber-400 mt-0.5">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
@@ -157,7 +157,7 @@
         </div>
 
         <!-- Feature 4: Accuracy Insights -->
-        <div class="glass-card glass-card-hover rounded-xl p-3.5 flex items-start gap-3.5 text-left">
+        <div class="flex benefit-card glass-card glass-card-hover rounded-xl p-3.5 flex items-center gap-3.5 text-center">
           <!-- <div class="w-9 h-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center shrink-0 text-blue-400 mt-0.5">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
@@ -187,7 +187,7 @@
       </div> -->
 
       <!-- Action Area: Primary CTA Button -->
-      <div class="flex flex-col items-center">
+      <div class="cta-area flex flex-col items-center">
         
         <p class="text-sm font-medium text-slate-300 mb-3 flex items-center justify-center gap-2">
           <span>👇</span>
@@ -198,7 +198,7 @@
         <button 
           id="telegram-join-btn"
           @click="redirectToTg"
-          class="relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 p-0.5 text-white font-bold text-base sm:text-lg shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group cursor-pointer"
+          class="cta-button relative w-full overflow-hidden rounded-2xl bg-gradient-to-r from-blue-600 via-blue-500 to-cyan-500 p-0.5 text-white font-bold text-base sm:text-lg shadow-xl shadow-blue-600/30 hover:shadow-blue-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 group cursor-pointer"
         >
           <!-- Shimmer Animation Layer -->
           <div class="shimmer-sweep pointer-events-none"></div>
@@ -247,7 +247,7 @@
       </div>
 
       <!-- Regulatory Disclaimer (Preserved & Cleanly Styled) -->
-      <footer class="mt-6 pt-4 border-t border-slate-800/60 text-center">
+      <footer class="legal-disclaimer mt-2 pt-4 border-t border-slate-800/60 text-center">
         <p class="text-[11px] text-slate-500 leading-relaxed max-w-sm mx-auto">
           <strong class="text-slate-400 font-semibold">Disclaimer:</strong> For educational and informational purposes only. 
           This is not investment or financial advice. Investments in securities and financial markets are subject to market risks. 
@@ -325,5 +325,75 @@ const patternIcons = ['📊', '💰', '📈', '🎯', '⚡', '💹', '📋', '�
 </script>
 
 <style scoped>
-/* Scoped adjustments if needed - base animations & tokens managed in style.css */
+@media (max-width: 639px) {
+  .landing-page {
+    min-height: 100svh;
+    height: 100svh;
+    padding: 10px 12px;
+  }
+
+  .landing-card {
+    max-width: 430px;
+    padding: 18px 16px;
+    border-radius: 24px;
+  }
+
+  .profile-link { margin-bottom: 10px; }
+
+  .brand-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .brand-title {
+    font-size: 1.75rem;
+    line-height: 1.1;
+    margin-bottom: 6px;
+  }
+
+  .brand-subtitle { margin-bottom: 10px; }
+
+  .social-proof {
+    padding: 8px 12px;
+    margin-bottom: 12px;
+  }
+
+  .benefit-list {
+    margin-bottom: 16px;
+    row-gap: 8px;
+  }
+
+  .benefit-card { padding: 10px 12px; }
+
+  .benefit-card h3 {
+    font-size: 0.875rem;
+    line-height: 1.35;
+  }
+
+  .cta-area > p { margin-bottom: 8px; }
+
+  .cta-button > div {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .legal-disclaimer {
+    margin-top: 14px;
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 639px) and (max-height: 700px) {
+  .landing-card {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .brand-logo {
+    width: 68px;
+    height: 68px;
+  }
+
+  .legal-disclaimer { display: none; }
+}
 </style>
