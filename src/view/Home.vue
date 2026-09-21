@@ -100,20 +100,7 @@
 
       </header>
 
-      <!-- Urgency Bar with Dynamic Countdown -->
-      <!-- <div class="mb-5 p-3 rounded-2xl bg-gradient-to-r from-red-950/40 via-amber-950/30 to-red-950/40 border border-amber-500/30 flex items-center justify-between">
-        <div class="flex items-center gap-2">
-          <span class="text-lg">🔥</span>
-          <div class="text-left">
-            <p class="text-xs font-semibold text-amber-200">Limited Free VIP Access</p>
-            <p class="text-[11px] text-amber-300/70">Invitation link refreshed periodically</p>
-          </div>
-        </div>
-        <div class="px-3 py-1 rounded-xl bg-black/60 border border-amber-500/40 text-amber-400 font-mono font-bold text-sm tracking-wider shadow-inner">
-          00:{{ countdown < 10 ? '0' + countdown : countdown }}s
-        </div>
-      </div> -->
-
+      
       <!-- Key Features Section (4 Elevated Glass Cards) -->
       <section class="benefit-list space-y-2.5 mb-6" aria-label="Key Benefits">
         
@@ -243,9 +230,23 @@
             <span>Zero Spam</span>
           </div>
         </div> -->
-
+        
       </div>
-
+      <!-- Urgency Bar with Dynamic Countdown -->
+      <!-- <div class="mb-1 mt-2 p-3 rounded-2xl bg-gradient-to-r from-red-950/40 via-amber-950/30 to-red-950/40 border border-amber-500/30 flex items-center justify-between"> -->
+        <div class="mb-1 mt-2 p-3 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <!-- <span class="text-lg">🔥</span> -->
+          <!-- <div class="text-center"> -->
+            <p class="text-xs font-semibold text-amber-200">Invitation link expires in</p>
+            <!-- <p class="text-[11px] text-amber-300/70">Invitation link refreshed periodically</p> -->
+          <!-- </div> -->
+        </div>
+        <div class="px-3 py-1 rounded-xl bg-black/60 border border-amber-500/40 text-amber-400 font-mono font-bold text-sm tracking-wider shadow-inner">
+          00:{{ countdown < 10 ? '0' + countdown : countdown }}s
+        </div>
+      </div>
+      
       <!-- Regulatory Disclaimer (Preserved & Cleanly Styled) -->
       <footer class="legal-disclaimer mt-2 pt-4 border-t border-slate-800/60 text-center">
         <p class="text-[11px] text-slate-500 leading-relaxed max-w-sm mx-auto">
