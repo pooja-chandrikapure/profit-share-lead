@@ -292,7 +292,7 @@ const redirectToTg = () => {
   if (typeof window !== 'undefined' && window.fbq) {
     window.fbq('track', 'Lead');
   }
-  window.open('https://t.me/+S71wdMVrWpsxYjJl', '_blank');
+  window.open('https://tinyurl.com/yhf4jwcm', '_blank');
 };
 
 // PRESERVED COMMENTED UTM CAMPAIGN LOGIC FOR FUTURE REFERENCE:
